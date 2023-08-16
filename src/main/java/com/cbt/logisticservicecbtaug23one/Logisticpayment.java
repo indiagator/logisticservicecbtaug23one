@@ -11,20 +11,23 @@ import javax.persistence.Table;
 @Getter
 @Setter
 @Entity
-@Table(name = "payments")
-public class Payment {
+@Table(name = "logisticpayments")
+public class Logisticpayment {
     @Id
     @Column(name = "id", nullable = false, length = 10)
     private String id;
 
-    @Column(name = "orderid", length = 10)
-    private String orderid;
+    @Column(name = "rfqorderid", length = 10)
+    private String rfqorderid;
 
-    @Column(name = "offerid", length = 10)
-    private String offerid;
+    @Column(name = "payer", length = 10)
+    private String payer;
+
+    @Column(name = "payertype", length = 10)
+    private String payertype;
 
     @Column(name = "status", length = 10)
-    private String status;
+    private String status; // DUE initially
 
     @Column(name = "paymentwalletlink", length = 10)
     private String paymentwalletlink;

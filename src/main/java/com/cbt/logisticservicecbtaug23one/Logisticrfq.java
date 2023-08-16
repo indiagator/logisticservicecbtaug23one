@@ -26,4 +26,7 @@ public class Logisticrfq {
     @Column(name = "orderid", length = 10)
     private String orderid;
 
+    @Column(name = "status", length = 10)
+    private String status;
+
 }
